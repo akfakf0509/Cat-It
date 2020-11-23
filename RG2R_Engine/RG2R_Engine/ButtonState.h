@@ -1,0 +1,8 @@
+#pragma once
+
+enum ButtonState
+{
+	BUTTONSTATE_NONE,
+	BUTTONSTATE_PUSHED,
+	BUTTONSTATE_HOVER
+};
