@@ -14,14 +14,14 @@ TextRenderData::TextRenderData()
 			__uuidof(IDWriteFactory5),
 			reinterpret_cast<IUnknown**>(&pDWriteFactory));
 
-	IDWriteFontSetBuilder1* pFontSetBuilder = nullptr;;
+	IDWriteFontSetBuilder1* pFontSetBuilder = nullptr;
 	if (SUCCEEDED(hr)) {
 		hr = pDWriteFactory->CreateFontSetBuilder(&pFontSetBuilder);
 	}
 
 	IDWriteFontFile* pFontFile = nullptr;
 	if (SUCCEEDED(hr)) {
-		hr = pDWriteFactory->CreateFontFileReference(L"Resources/Fonts/Font.otf", nullptr, &pFontFile); //윈도우 10버전 이상부터 사용가능
+		hr = pDWriteFactory->CreateFontFileReference(L"Resources/Fonts/Font.ttf", nullptr, &pFontFile); //윈도우 10버전 이상부터 사용가능
 	}
 
 	hr = pFontSetBuilder->AddFontFile(pFontFile);
@@ -34,7 +34,22 @@ TextRenderData::TextRenderData()
 		&fontCollection
 	);
 
-	fontFamily = Widen("맑은 고딕").c_str();
+	/*IDWriteFontFamily* pFontFamily = nullptr;
+	IDWriteLocalizedStrings* pLocalizedFontName = nullptr;
+	TCHAR pontName[65];
+
+	fontCollection->GetFontFamily(0, &pFontFamily);
+	pFontFamily->GetFamilyNames(&pLocalizedFontName);
+	pLocalizedFontName->GetString(0, pontName, 65);
+
+	for (int i = 0; i < 65; i++) {
+		if (pontName[i] == '\0') {
+			break;
+		}
+		cout << (char)pontName[i];
+	}*/
+
+	fontFamily = Widen("1HoonWhitecat").c_str();
 	weight = DWRITE_FONT_WEIGHT_REGULAR;
 	style = DWRITE_FONT_STYLE_NORMAL;
 	stretch = DWRITE_FONT_STRETCH_NORMAL;

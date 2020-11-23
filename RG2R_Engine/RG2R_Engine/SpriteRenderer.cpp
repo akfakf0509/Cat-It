@@ -136,6 +136,8 @@ Rect SpriteRenderer::GetRealArea()
 SpriteRenderer* SpriteRenderer::SetTexture(const std::string& str)
 {
 	defaultData.SetTexture(str);
+	GetOwner()->GetComponent<Transform>()
+		->SetAnchor(GetVisibleArea().GetCenter());
 
 	return this;
 }

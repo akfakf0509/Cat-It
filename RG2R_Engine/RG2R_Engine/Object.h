@@ -10,6 +10,7 @@ class Component;
 class Scene;
 class Camera;
 class ViewRenderData;
+class Transform;
 
 enum ObjectState
 {
@@ -24,6 +25,7 @@ class Object
 {
 public:
 	std::vector<CommandList*> commandLists;
+	Transform* transform;
 
 private:
 	void Render();

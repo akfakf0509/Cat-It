@@ -5,9 +5,11 @@
 #include "SpriteRenderer.h"
 #include <iostream>
 
+#include "MainScene.h"
+
 Scene* SceneManager::FirstScene()
 {
-	return nullptr;
+	return new MainScene();
 }
 
 SceneManager::SceneManager()

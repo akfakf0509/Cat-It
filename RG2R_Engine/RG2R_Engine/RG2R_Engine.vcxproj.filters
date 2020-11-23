@@ -169,6 +169,12 @@
     <Filter Include="소스 파일\Engine\Element\Prefab\ParticleSystem">
       <UniqueIdentifier>{6601eed5-e848-462c-9b9b-948d6c4568cc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Game\Scenes\MainScene">
+      <UniqueIdentifier>{b2cc1b47-24b1-45dd-99a8-a50e95f7d34d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Game\Scenes\StageSelectScene">
+      <UniqueIdentifier>{24eaa103-90c9-4472-8b02-9b952dbe91cd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -324,6 +330,12 @@
     <ClInclude Include="ButtonObject.h">
       <Filter>소스 파일\Engine\Element\Prefab\ButtonObject</Filter>
     </ClInclude>
+    <ClInclude Include="MainScene.h">
+      <Filter>소스 파일\Game\Scenes\MainScene</Filter>
+    </ClInclude>
+    <ClInclude Include="StageSelectScene.h">
+      <Filter>소스 파일\Game\Scenes\StageSelectScene</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="RG2R_Engine.rc">
@@ -470,6 +482,12 @@
     </ClCompile>
     <ClCompile Include="ButtonObject.cpp">
       <Filter>소스 파일\Engine\Element\Prefab\ButtonObject</Filter>
+    </ClCompile>
+    <ClCompile Include="MainScene.cpp">
+      <Filter>소스 파일\Game\Scenes\MainScene</Filter>
+    </ClCompile>
+    <ClCompile Include="StageSelectScene.cpp">
+      <Filter>소스 파일\Game\Scenes\StageSelectScene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

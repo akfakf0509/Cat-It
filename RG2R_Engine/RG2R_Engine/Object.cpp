@@ -6,7 +6,7 @@
 
 Object::Object()
 {
-	AttachComponent<Transform>();
+	transform = AttachComponent<Transform>();
 }
 
 Object::~Object()
