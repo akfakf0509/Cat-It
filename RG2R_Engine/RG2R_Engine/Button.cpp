@@ -92,7 +92,7 @@ void Button::OnUpdate() {
 	}
 	else {
 		Rect rect = spriterenderer->GetVisibleArea();
-		Vec2F scale = Vec2F(1, 1);
+		Vec2F scale = transform->GetScale();
 
 		for (Object* iter = GetOwner(); iter->GetParent() != nullptr; iter = iter->GetParent()) {
 			scale *= iter->GetComponent<Transform>()->GetScale();
@@ -146,6 +146,27 @@ Button* Button::SetHoverTexture(const std::string& path) {
 
 Button* Button::SetPushedTexture(const std::string& path) {
 	pushedTexture = RG2R_TextureM->Load(path);
+
+	return this;
+}
+
+Button * Button::SetNormalScale(float x, float y)
+{
+	normalScale = Vec2F(x, y);
+
+	return this;
+}
+
+Button * Button::SetHoverScale(float x, float y)
+{
+	hoverScale = Vec2F(x, y);
+
+	return this;
+}
+
+Button * Button::SetPushedScale(float x, float y)
+{
+	pushedScale = Vec2F(x, y);
 
 	return this;
 }

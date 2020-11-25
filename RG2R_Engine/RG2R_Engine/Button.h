@@ -59,5 +59,9 @@ public:
 	Button* SetHoverTexture(const std::string&);
 	Button* SetPushedTexture(const std::string&);
 
+	Button* SetNormalScale(float, float);
+	Button* SetHoverScale(float, float);
+	Button* SetPushedScale(float, float);
+
 	ButtonEffectType GetButtonEffectType();
 };

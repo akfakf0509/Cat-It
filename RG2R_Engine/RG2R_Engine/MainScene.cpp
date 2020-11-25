@@ -6,7 +6,7 @@
 #include "Transform.h"
 #include "Engine.h"
 
-#include "StageSelectScene.h"
+#include "ChapterSelectScene.h"
 
 MainScene::MainScene() {
 	background = CreateObject();
@@ -39,6 +39,6 @@ void MainScene::OnUpdate() {
 		->SetTextColor(Color(0, 0, 0, Sin(catItAnimation)));
 
 	if (RG2R_InputM->GetMouseState(MouseCode::MOUSE_LBUTTON) == KeyState::KEYSTATE_EXIT) {
-		RG2R_SceneM->ChangeScene(new StageSelectScene());
+		RG2R_SceneM->ChangeScene(new ChapterSelectScene());
 	}
 }

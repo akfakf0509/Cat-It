@@ -333,7 +333,7 @@
     <ClInclude Include="MainScene.h">
       <Filter>소스 파일\Game\Scenes\MainScene</Filter>
     </ClInclude>
-    <ClInclude Include="StageSelectScene.h">
+    <ClInclude Include="ChapterSelectScene.h">
       <Filter>소스 파일\Game\Scenes\StageSelectScene</Filter>
     </ClInclude>
   </ItemGroup>
@@ -486,7 +486,7 @@
     <ClCompile Include="MainScene.cpp">
       <Filter>소스 파일\Game\Scenes\MainScene</Filter>
     </ClCompile>
-    <ClCompile Include="StageSelectScene.cpp">
+    <ClCompile Include="ChapterSelectScene.cpp">
       <Filter>소스 파일\Game\Scenes\StageSelectScene</Filter>
     </ClCompile>
   </ItemGroup>
