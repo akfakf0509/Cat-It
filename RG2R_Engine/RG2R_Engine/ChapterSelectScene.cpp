@@ -6,6 +6,8 @@
 #include "Button.h"
 #include "Engine.h"
 
+#include "ChapterLoader.h"
+
 ChapterSelectScene::ChapterSelectScene() {
 	background = CreateObject();
 	background->AttachComponent<SpriteRenderer>()
@@ -33,6 +35,10 @@ ChapterSelectScene::ChapterSelectScene() {
 
 		chapters.push_back(tmp);
 	}
+
+	chapters[0]->onClickExit = [=]() {
+		RG2R_SceneM->ChangeScene(new ChapterLoader("Resources/Chapters/1"));
+	};
 }
 
 ChapterSelectScene::~ChapterSelectScene() {

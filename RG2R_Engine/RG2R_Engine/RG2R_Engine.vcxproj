@@ -166,6 +166,8 @@
     <ClInclude Include="Button.h" />
     <ClInclude Include="ButtonObject.h" />
     <ClInclude Include="Camera.h" />
+    <ClInclude Include="ChapterLoader.h" />
+    <ClInclude Include="ChapterMaker.h" />
     <ClInclude Include="CircleCollider.h" />
     <ClInclude Include="Collider.h" />
     <ClInclude Include="Command.h" />
@@ -203,6 +205,7 @@
     <ClInclude Include="Texture.h" />
     <ClInclude Include="TextureManager.h" />
     <ClInclude Include="Textures.h" />
+    <ClInclude Include="Tile.h" />
     <ClInclude Include="TimeManager.h" />
     <ClInclude Include="Transform.h" />
     <ClInclude Include="ViewRenderData.h" />
@@ -221,6 +224,8 @@
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="ButtonObject.cpp" />
     <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="ChapterLoader.cpp" />
+    <ClCompile Include="ChapterMaker.cpp" />
     <ClCompile Include="CircleCollider.cpp" />
     <ClCompile Include="Collider.cpp" />
     <ClCompile Include="CommandList.cpp" />
@@ -258,6 +263,7 @@
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="TextureManager.cpp" />
     <ClCompile Include="Textures.cpp" />
+    <ClCompile Include="Tile.cpp" />
     <ClCompile Include="TimeManager.cpp" />
     <ClCompile Include="Transform.cpp" />
     <ClCompile Include="ViewRenderData.cpp" />

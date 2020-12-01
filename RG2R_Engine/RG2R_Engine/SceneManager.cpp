@@ -6,10 +6,11 @@
 #include <iostream>
 
 #include "MainScene.h"
+#include "ChapterMaker.h"
 
 Scene* SceneManager::FirstScene()
 {
-	return new MainScene();
+	return new ChapterMaker();
 }
 
 SceneManager::SceneManager()

@@ -175,6 +175,15 @@
     <Filter Include="소스 파일\Game\Scenes\StageSelectScene">
       <UniqueIdentifier>{24eaa103-90c9-4472-8b02-9b952dbe91cd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Game\Scenes\ChapterLoader">
+      <UniqueIdentifier>{d397e1ee-b273-412f-bd97-7c8f6551562b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Game\Scenes\ChapterMaker">
+      <UniqueIdentifier>{aec5353c-9956-40b0-873b-7ff530014c6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Game\Objects\Tile">
+      <UniqueIdentifier>{faaf98cd-1076-4570-b438-21a20ba66a77}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -336,6 +345,15 @@
     <ClInclude Include="ChapterSelectScene.h">
       <Filter>소스 파일\Game\Scenes\StageSelectScene</Filter>
     </ClInclude>
+    <ClInclude Include="ChapterLoader.h">
+      <Filter>소스 파일\Game\Scenes\ChapterLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="ChapterMaker.h">
+      <Filter>소스 파일\Game\Scenes\ChapterMaker</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile.h">
+      <Filter>소스 파일\Game\Objects\Tile</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="RG2R_Engine.rc">
@@ -488,6 +506,15 @@
     </ClCompile>
     <ClCompile Include="ChapterSelectScene.cpp">
       <Filter>소스 파일\Game\Scenes\StageSelectScene</Filter>
+    </ClCompile>
+    <ClCompile Include="ChapterLoader.cpp">
+      <Filter>소스 파일\Game\Scenes\ChapterLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="ChapterMaker.cpp">
+      <Filter>소스 파일\Game\Scenes\ChapterMaker</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile.cpp">
+      <Filter>소스 파일\Game\Objects\Tile</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
