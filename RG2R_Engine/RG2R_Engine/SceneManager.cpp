@@ -10,7 +10,7 @@
 
 Scene* SceneManager::FirstScene()
 {
-	return new ChapterMaker();
+	return new MainScene();
 }
 
 SceneManager::SceneManager()

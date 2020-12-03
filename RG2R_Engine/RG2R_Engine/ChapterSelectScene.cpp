@@ -4,6 +4,7 @@
 #include "SpriteRenderer.h"
 #include "Transform.h"
 #include "Button.h"
+#include "Effect.h"
 #include "Engine.h"
 
 #include "ChapterLoader.h"
@@ -39,6 +40,27 @@ ChapterSelectScene::ChapterSelectScene() {
 	chapters[0]->onClickExit = [=]() {
 		RG2R_SceneM->ChangeScene(new ChapterLoader("Resources/Chapters/1"));
 	};
+	chapters[1]->onClickExit = [=]() {
+		RG2R_SceneM->ChangeScene(new ChapterLoader("Resources/Chapters/2"));
+	};
+
+	chapters[2]->AttachComponent<Effect>()
+		->PushEffectInfo(new ColorMatrixEffectInfo(Color(0.5f, 0.5f, 0.5f)));
+	chapters[2]->CreateChildObject()
+		->AttachComponent<SpriteRenderer>()
+		->SetTexture("Resources/Sprites/ChapterSelectScene/Lock.png");
+
+	chapters[3]->AttachComponent<Effect>()
+		->PushEffectInfo(new ColorMatrixEffectInfo(Color(0.5f, 0.5f, 0.5f)));
+	chapters[3]->CreateChildObject()
+		->AttachComponent<SpriteRenderer>()
+		->SetTexture("Resources/Sprites/ChapterSelectScene/Lock.png");
+
+	chapters[4]->AttachComponent<Effect>()
+		->PushEffectInfo(new ColorMatrixEffectInfo(Color(0.5f, 0.5f, 0.5f)));
+	chapters[4]->CreateChildObject()
+		->AttachComponent<SpriteRenderer>()
+		->SetTexture("Resources/Sprites/ChapterSelectScene/Lock.png");
 }
 
 ChapterSelectScene::~ChapterSelectScene() {

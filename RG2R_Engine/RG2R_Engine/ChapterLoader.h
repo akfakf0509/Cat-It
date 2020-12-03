@@ -2,16 +2,25 @@
 #include "Scene.h"
 
 #include <fstream>
-#include <vector>
+#include <map>
+
+#include "Tile.h"
 
 class ChapterLoader :
 	public Scene
 {
 private:
-	std::vector<Object*> objs;
+	int x = 0, y = 0;
+
+	Object* background;
+	Object* player;
+
+	std::map<int, std::map<int, Tile*>> objs;
 
 public:
 	ChapterLoader(const std::string&);
 	~ChapterLoader();
+
+	void OnUpdate();
 };
 
