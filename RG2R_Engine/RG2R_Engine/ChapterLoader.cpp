@@ -254,4 +254,8 @@ void ChapterLoader::OnUpdate() {
 
 	player->transform
 		->SetPos(Vec2F(x, y) * 1.13f / 4);
+
+	if (RG2R_InputM->GetKeyState(KeyCode::KEY_ESCAPE) == KeyState::KEYSTATE_ENTER) {
+		RG2R_SceneM->ChangeScene(new ChapterSelectScene());
+	}
 }

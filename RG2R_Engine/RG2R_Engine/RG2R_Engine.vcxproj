@@ -274,9 +274,8 @@
     <ResourceCompile Include="RG2R_Engine.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="small.ico" />
     <Image Include="RG2R_Engine.ico" />
-    <Image Include="게임아이콘.ico" />
+    <Image Include="small.ico" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Math.inl" />

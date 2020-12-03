@@ -367,9 +367,6 @@
     <Image Include="RG2R_Engine.ico">
       <Filter>리소스 파일</Filter>
     </Image>
-    <Image Include="게임아이콘.ico">
-      <Filter>리소스 파일</Filter>
-    </Image>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

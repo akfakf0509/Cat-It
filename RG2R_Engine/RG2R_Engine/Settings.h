@@ -1,11 +1,11 @@
 #include "stdafx.h"
 
-#define GAME_TITLE "Test Title"
+#define GAME_TITLE "Cat-it"
 #define BACKGROUND_COLOR 0xffffffffff
 
 #define WINDOW_DEFAULT_WIDTH 1280
 #define WINDOW_DEFAULT_HEIGHT 720
-#define WINDOW_START_FULLSCREEN false
+#define WINDOW_START_FULLSCREEN true
 #define WINDOW_RESIZABLE false
 #define WINDOW_EXIST_MINIMIZEBOX false
 #define WINDOW_EXIST_MAXIMIZEBOX false

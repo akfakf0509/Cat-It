@@ -8,6 +8,7 @@
 #include "Engine.h"
 
 #include "ChapterLoader.h"
+#include "MainScene.h"
 
 ChapterSelectScene::ChapterSelectScene() {
 	background = CreateObject();
@@ -48,19 +49,25 @@ ChapterSelectScene::ChapterSelectScene() {
 		->PushEffectInfo(new ColorMatrixEffectInfo(Color(0.5f, 0.5f, 0.5f)));
 	chapters[2]->CreateChildObject()
 		->AttachComponent<SpriteRenderer>()
-		->SetTexture("Resources/Sprites/ChapterSelectScene/Lock.png");
+		->SetTexture("Resources/Sprites/ChapterSelectScene/Lock.png")
+		->GetOwner()->transform
+		->SetScale(5, 5);
 
 	chapters[3]->AttachComponent<Effect>()
 		->PushEffectInfo(new ColorMatrixEffectInfo(Color(0.5f, 0.5f, 0.5f)));
 	chapters[3]->CreateChildObject()
 		->AttachComponent<SpriteRenderer>()
-		->SetTexture("Resources/Sprites/ChapterSelectScene/Lock.png");
+		->SetTexture("Resources/Sprites/ChapterSelectScene/Lock.png")
+		->GetOwner()->transform
+		->SetScale(5, 5);
 
 	chapters[4]->AttachComponent<Effect>()
 		->PushEffectInfo(new ColorMatrixEffectInfo(Color(0.5f, 0.5f, 0.5f)));
 	chapters[4]->CreateChildObject()
 		->AttachComponent<SpriteRenderer>()
-		->SetTexture("Resources/Sprites/ChapterSelectScene/Lock.png");
+		->SetTexture("Resources/Sprites/ChapterSelectScene/Lock.png")
+		->GetOwner()->transform
+		->SetScale(5, 5);
 }
 
 ChapterSelectScene::~ChapterSelectScene() {
@@ -80,4 +87,8 @@ void ChapterSelectScene::OnUpdate()
 	titleAnimation += RG2R_TimeM->GetDeltaTime() * 50;
 
 	title->transform->SetPosY(2.1f + Sin(titleAnimation) / 15);
+
+	if (RG2R_InputM->GetKeyState(KeyCode::KEY_ESCAPE) == KeyState::KEYSTATE_ENTER) {
+		RG2R_SceneM->ChangeScene(new MainScene());
+	}
 }

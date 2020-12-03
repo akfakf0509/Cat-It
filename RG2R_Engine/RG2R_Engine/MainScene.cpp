@@ -41,4 +41,8 @@ void MainScene::OnUpdate() {
 	if (RG2R_InputM->GetMouseState(MouseCode::MOUSE_LBUTTON) == KeyState::KEYSTATE_EXIT) {
 		RG2R_SceneM->ChangeScene(new ChapterSelectScene());
 	}
+
+	if (RG2R_InputM->GetKeyState(KeyCode::KEY_ESCAPE) == KeyState::KEYSTATE_ENTER) {
+		RG2R_WindowM->Close();
+	}
 }
